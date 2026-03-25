@@ -45,10 +45,10 @@ header>div>div>a:hover{
   transition: .3s ease;
 }
 .marginbox-left{
-  margin-left: 80px ;
+  margin-left: 300px ;
 }
 .marginbox-right{
-  margin-right: 80px;
+  margin-right: 300px;
 }
 nav{
   display: flex;
@@ -179,136 +179,129 @@ transition: .3s ease;
 .second-btn:hover{
     background-color: #c9c9c9c9;
 }
-
 #sug-main{
-    width: 90%;
+    width: 100%;
+    max-width: 1160px;
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 }
+
 .suga-big-box{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: space-between;
-    gap: 50px;
+    display: grid;
+    padding-top: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
 
 .suga-box{
-    width: 525px;
-    height: auto;
-    padding: 16px;
+    padding: 20px;
     display: flex;
-    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
     background-color: #f6f6f6;
 }
 .suga-box>div>img{
-    width: 128px;
-    height: 128px;
+    width: 120px;
 }
-.suga-box>div>button{
-    padding: 10px;
+.suga-box button{
+    padding: 10px 16px;
     border-radius: 20px;
-    border-style: none;
+    border: none;
     background-color: white;
+    cursor: pointer;
 }
-.suga-box>div>button:hover{
-    background-color: rgb(189, 189, 189);
+.suga-box button:hover{
+    background-color: #d9d9d9;
 }
-
 #pay{
   padding-top: 30px;
 }
-#pay-main {
-  width: 75%;
-  margin: auto;
-  padding: 20px;
-  gap: 40px;
-  display: flex;
-  flex-direction: row;
-  border-radius: 10px;
-}
 
 #pay>h1{
-  width: 90%;
+  width: 60%;
+  margin: auto;
+  padding-left: 0%;
+  margin-bottom: 20px;
+}
+
+#pay-main{
+  width: 60%;
   margin: auto;
   display: flex;
-  flex-direction: column;
-  gap: 40px;
+  gap: 30px;
 }
+
+#pay-left{
+  width: 30%;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 #pay-right{
   width: 70%;
   background-color: #9DCDD6;
   background-image: url("https://tb-static.uber.com/prod/udam-assets/5152cc71-a5b0-4fbd-aeb8-bee896efcd48.png");
   background-repeat: no-repeat;
-  background-size: 293px;
-  background-position: right;
-  border-radius: 8px;
-  padding: 25px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-#pay-rmini{
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-#pay-rmini>p{
-  font-size: 16px; 
-  font-weight: 500;  
-  color: #1f2937;
-}
-#pay-right>button{
-  width: 300px;
-  height: 50px;
-  background-color: #000000;
-  color: white;
+  background-position: right center;
+  background-size: 300px;
   border-radius: 10px;
-  text-align: center;
-}
-#pay-right>h2{
-  font-size: 35px;
-}
-#pay-time{
+  padding: 40px;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
 }
-.pay-time1>p{
-  font-size: 13px;
-}
-.pay-time1>input{
-  width: 200px;
-  height: 35px;
-}
-#pay-left {
-  width: 30%;
-  background-color: white;
-  padding: 30px;
-  border-radius: 10px;
-  border: 1px solid black;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
+
+#pay-right h2{
+  font-size: 35px;
 }
 
-.pay-box {
+#pay-time{
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.pay-time1{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pay-time1 input{
+  width: 220px;
+  height: 40px;
+  padding-left: 10px;
+}
+
+#pay-right button{
+  width: 300px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.pay-box{
   display: flex;
   align-items: center;
   gap: 10px;
-  margin-bottom: 12px;
 }
 
 #ride-main{
-  width: 80%;
-  padding: 80px;
+  width: 100%;
+  padding-top: 80px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 30px;
+  gap: 95px;
 }
 #ride-m{
     display: flex;
@@ -332,34 +325,51 @@ transition: .3s ease;
 #book-ride{
    text-align: center;
 }
+#travel{
+  width: 75%;
+  margin: auto;
+}
+
+#travel h1{
+  margin-bottom: 40px;
+  padding-top: 100px;
+}
 
 #travelbox-main{
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 40px;
 }
 
 .travelbox{
+  width: 350px;   
   text-align: left;
-  width: 300px;
 }
 
 .travelbox img{
   width: 100%;
-  border-radius: 8px;
+  height: 370px;   
+  object-fit: cover;
+}
+
+.travelbox h3{
+  margin-top: 15px;
+}
+
+.travelbox p{
+  margin-top: 10px;
+  line-height: 1.5;
 }
 
 .travelbox button{
-  margin-top: 15px;
-  padding: 10px 18px;
+  margin-top: 20px;
+  padding: 12px 22px;
   background: black;
   color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
-
 #business{
   background: black;
   color: white;
@@ -467,7 +477,7 @@ transition: .3s ease;
 
 #lastparegraph{
   margin-top:60px;
-  padding:40px 200px;
+  padding:40px 400px;
   font-size:14px;
   line-height:1.6;
   color:#555;
@@ -476,6 +486,7 @@ transition: .3s ease;
 
 #footer-uber{
   background-color: #000000;
+  padding: 0px 100px;
 }
 
 #footer-main{
@@ -489,7 +500,12 @@ transition: .3s ease;
   flex-direction: column;
   gap: 30px;
 }
-
+#footer-1 h4{
+padding-left: 85px;
+}
+#footer-1 p{
+  padding-left: 85px;
+}
 #footer-2{
   color: white;
   display: flex;
@@ -526,6 +542,9 @@ transition: .3s ease;
 
 #footer-3>div>ul{
   list-style: none;
+  padding-left: 85px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #foot-icon{
